@@ -123,6 +123,13 @@ const handleAdd = () => {
 > Finally, a [`Button`](https://primereact.org/button/) component with the label "Add" and a "plus" icon is displayed, allowing users to trigger the `handleAdd` function when clicked. This code segment collectively forms the user interface for inputting and adding new category data in the application.
 
 ### Extra Challenge
-1. Create an edit functional component which includes user interface to modify ```name``` and ```description``` properties.
+1. Create an **Edit** functional component which includes user interface to modify ```name``` and ```description``` properties.
+
+```js
+const handleEdit = () => {
+    // edit logic here...
+};
+```
+
 2. Update the ```DataTable``` once the changes are saved.
 3. Create a ```categories.json``` data and use ```axios``` to perform ```GET``` and ```PUT``` requests.
