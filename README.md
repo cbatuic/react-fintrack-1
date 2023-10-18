@@ -137,3 +137,5 @@ const handleAdd = () => {
 
 2. Update the ```DataTable``` once the changes are saved.
 3. Create a ```categories.json``` data and use ```axios``` to perform ```GET``` and ```PUT``` requests.
+
+![react-fintrack-1](./fintrack-react-1-challenge.gif)
