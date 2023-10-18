@@ -121,3 +121,8 @@ const handleAdd = () => {
 > These lines of code represent the user interface elements for adding a new category in a React application. A heading with "Add Category" is displayed to provide context. Below the heading, there are two `InputText` components, each associated with the `name` and `description` properties of the `newCategory` state. Users can input the name and description of the new category in these text fields, and their changes are captured with the `onChange` event handlers, updating the `newCategory` state accordingly. 
 
 > Finally, a [`Button`](https://primereact.org/button/) component with the label "Add" and a "plus" icon is displayed, allowing users to trigger the `handleAdd` function when clicked. This code segment collectively forms the user interface for inputting and adding new category data in the application.
+
+### Extra Challenge
+1. Create an edit functional component which includes user interface to modify ```name``` and ```description``` properties.
+2. Update the ```DataTable``` once the changes are saved.
+3. Create a ```categories.json``` data and use ```axios``` to perform ```GET``` and ```PUT``` requests.
