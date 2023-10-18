@@ -66,9 +66,9 @@ function App(){
 }
 export default App;
 ```
-> This code snippet defines a ```React``` ***functional component*** named ```App```, which typically houses the core ***logic*** and ***user*** interface structure of a React application. The comment placeholders indicate where developers should add application-specific logic and the user interface structure using ***JSX***. 
+> This code snippet defines a ```React``` [***functional component***](https://react.dev/learn/keeping-components-pure#purity-components-as-formulas) named ```App```, which typically houses the core ***logic*** and ***user*** interface structure of a React application. The comment placeholders indicate where developers should add application-specific logic and the user interface structure using [***JSX***](https://react.dev/learn/writing-markup-with-jsx). 
 
-> The final line exports App as the default export, enabling it to be imported and used with a chosen variable name in other parts of the application. This snippet represents the foundational structure of a React application, separating logic and presentation within the same component.
+> The final line ```exports App``` as the default export, enabling it to be imported and used with a chosen variable name in other parts of the application. This snippet represents the foundational structure of a React application, separating logic and presentation within the same component.
 
 ```js
   const initialCategories = [...];
@@ -77,7 +77,7 @@ export default App;
   const [newCategory, setNewCategory] = useState({ id: '', name: '', description: '' });
 
 ```
-> The provided code initializes and manages the ***state of categories*** in a ```React``` application. It starts by defining an ***initialCategories*** array containing predefined category objects, each with *id*, *name*, and *description* properties. The code then utilizes the ***useState hook*** to create two state variables: *categories* and *newCategory*. 
+> The provided code initializes and manages the ***state of categories*** in a ```React``` application. It starts by defining an ***initialCategories*** array containing predefined category objects, each with *id*, *name*, and *description* properties. The code then utilizes the [***useState hook***](https://react.dev/reference/react#state-hooks) to create two state variables: *categories* and *newCategory*. 
 
 > The categories state variable holds the category data and is initialized with the initialCategories array. Meanwhile, ***newCategory*** is used to *capture user input* for adding new categories and is initially set as an empty category object. This code sets up the foundational ***state management*** for category data, allowing the application to display existing categories and facilitate the addition of new ones.
 
@@ -100,7 +100,7 @@ const handleAdd = () => {
     <Column field="description" header="Description"></Column>
 </DataTable>
 ```
-> This code represents the rendering of a data table using PrimeReact components within a React application. The `DataTable` component is used to display tabular data, and it is populated with data from the `categories` state. Inside the `DataTable`, three `Column` components define the columns of the table: "ID," "Name," and "Description." 
+> This code represents the rendering of a data table using [***PrimeReact components***](https://primereact.org/datatable/) within a React application. The `DataTable` component is used to display tabular data, and it is populated with data from the `categories` state. Inside the `DataTable`, three `Column` components define the columns of the table: "ID," "Name," and "Description." 
 
 > These columns are configured to display data from the `categories` array based on the corresponding `field` properties, which specify which object property to show in each column. This code is responsible for rendering a table that displays the categories' ID, name, and description in the user interface of the application.
 
@@ -120,4 +120,4 @@ const handleAdd = () => {
 ```
 > These lines of code represent the user interface elements for adding a new category in a React application. A heading with "Add Category" is displayed to provide context. Below the heading, there are two `InputText` components, each associated with the `name` and `description` properties of the `newCategory` state. Users can input the name and description of the new category in these text fields, and their changes are captured with the `onChange` event handlers, updating the `newCategory` state accordingly. 
 
-> Finally, a `Button` component with the label "Add" and a "plus" icon is displayed, allowing users to trigger the `handleAdd` function when clicked. This code segment collectively forms the user interface for inputting and adding new category data in the application.
+> Finally, a [`Button`](https://primereact.org/button/) component with the label "Add" and a "plus" icon is displayed, allowing users to trigger the `handleAdd` function when clicked. This code segment collectively forms the user interface for inputting and adding new category data in the application.
